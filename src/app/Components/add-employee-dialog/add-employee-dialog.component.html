@@ -1,0 +1,24 @@
+<ol>
+    <h2 mat-dialog-title>Emp-detail dialog </h2>
+    <li>
+        <mat-form-field class="invisible example-full-width">
+            <input matInput value="data.espId" ngModel name="data.espId">
+        </mat-form-field>
+    </li>
+    <li>
+        <mat-form-field>
+            <mat-label>What's your name?</mat-label>
+            <input matInput [(ngModel)]="data.name">
+
+        </mat-form-field>
+    </li>
+    <li>
+        <mat-form-field>
+            <mat-label>What's your email?</mat-label>
+            <input matInput value="data.name" [(ngModel)]="data.email">
+
+        </mat-form-field>
+    </li>
+    <button mat-raised-button value="data.email" color="accent" (click)="Submit()">Save</button>
+
+</ol>
